@@ -1,0 +1,200 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 16px;
+	--color-text: #000;
+	--color-bg: #ddd;
+	--color-link: #888;
+	--color-link-hover: #000;
+}
+
+body {
+	margin: 0;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
+}
+
+/* Page Loader */
+.js .loading::before,
+.js .loading::after {
+	content: '';
+	position: fixed;
+	z-index: 1000;
+}
+
+.js .loading::before {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+}
+
+.js .loading::after {
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	border-radius: 50%;
+	opacity: 0.4;
+	background: var(--color-link);
+	animation: loaderAnim 0.7s linear infinite alternate forwards;
+
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5,0.5,1);
+	}
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.ui-controls {
+	position: absolute;
+	bottom: 2%;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+	font-family: inherit;
+	user-select: none;
+	line-height: 1.5;
+	pointer-events: none;
+}
+
+button {
+	background-color: #273e9a;
+	font-weight: bold;
+	color: #ffffff;
+	border: none;
+	padding: 1em 1.5em;
+	border-radius: 1.5em;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	transition: background-color 0.2s, transform 0.1s;
+	pointer-events: auto;
+}
+
+button:active {
+	transform: translateY(2px);
+}
+
+button:hover {
+	background-color: #3737af;
+}
+
+.menu-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 80%;
+	max-width: 200px;
+}
+
+.menu-input {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.hidden {
+	display: none;
+}
+
+.score-table {
+	position: absolute;
+	top: 1%;
+	user-select: none;
+	text-align: center;
+	min-width: 180px;
+	max-width: 500px;
+}
+
+thead, tbody { display: block; }
+
+tbody {
+    max-height: 83px;
+    overflow-y: auto;
+}
+
+th {
+	min-width: 50px;
+}
+
+td {
+	min-width: 32px;
+}
+
+.dice-button {
+	display: inline-block;
+	text-align: left;
+	font-size: 40px;
+	width: 24px;
+	height: 20px;
+	vertical-align: middle; /* Adjust vertical alignment */
+	line-height: 33%;
+}
+
+.highlight-row {
+	background-color: #273e9a;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 0em 0.5em;
+	border-radius: 1.5em;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.banner {
+    background-color: #273e9a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+button[disabled] {
+	/* Styles for the disabled button */
+	opacity: 0.5;
+	cursor: not-allowed;
+	/* Add any other desired styles */
+}

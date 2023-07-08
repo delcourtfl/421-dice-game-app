@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>421 Dice Roller</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+	</head>
+	<body>
+		<main>
+			<div class="menu-container">
+				<header>
+					<h1 class="banner">421<br>The App</h1>
+				</header>
+				<h2>Number of Players</h2>
+				<input type="number" id="player-input" min="1" max="7" class="menu-input" />
+				<button id="play-btn">Play</button>
+				<button id="resume-btn">Resume</button>
+			</div>
+
+			<div class="content hidden">
+				<canvas id="canvas"></canvas>
+				<table id="score-table" class="score-table">
+					<thead>
+						<tr>
+							<th>Player</th>
+							<th>Score</th>
+							<th>Throws</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Table rows for each player's score will be dynamically added here -->
+					</tbody>
+				</table>
+				<div class="ui-controls">
+					<button id="roll-btn">Dice Roll</button>
+					<button id="next-btn">Next Player</button>
+					<button id="return-btn">Menu</button>
+				</div>
+			</div>
+		</main>
+		<script async src="js/es-module-shims.js"></script>
+		<script type="importmap">
+		  {
+			"imports": {
+			  "three": "./js/three.module.js",
+			  "cannon-es": "./js/cannon-es.js",
+			  "OrbitControls": "./js/OrbitControls.js",
+			  "OBJLoader": "./js/OBJLoader.js",
+			  "MTLLoader": "./js/MTLLoader.js"
+			}
+		  }
+		</script>
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>
