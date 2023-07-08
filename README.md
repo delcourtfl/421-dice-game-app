@@ -1,6 +1,6 @@
 # 421 Dice Game App
 
-![Game Screenshot](screenshot.png)
+![Game Screenshot](screenshot.PNG)
 
 This repository contains the source code and assets for a browser-based dice game app. The game is based on the popular dice game "421", where players roll three dice and aim to reach the highest score by combining different dice combinations.
 
