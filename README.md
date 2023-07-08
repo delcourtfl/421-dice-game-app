@@ -60,5 +60,5 @@ You can try out the live demo of the game [here](https://delcourtfl.github.io/42
 
 ## Acknowledgements
 
-- [Three.js Rolling Dice Tutorial](https://github.com/uuuulala/Threejs-rolling-dice-tutorial/) from this tutorial : [Crafting a Dice Roller with Three.js and Cannon.es](https://tympanus.net/codrops/2023/01/25/crafting-a-dice-roller-with-three-js-and-cannon-es/).
+- [Three.js Rolling Dice Tutorial](https://github.com/uuuulala/Threejs-rolling-dice-tutorial/) from this article : [Crafting a Dice Roller with Three.js and Cannon.es](https://tympanus.net/codrops/2023/01/25/crafting-a-dice-roller-with-three-js-and-cannon-es/).
 - 3D dice model from [Free3D](https://free3d.com/3d-model/dice-34662.html).
