@@ -34,7 +34,7 @@ You can try out the live demo of the game [here](https://delcourtfl.github.io/42
 
 ## Game Rules
 
-- First Player set the maximum number of available throws.
+- First Player set the maximum number of available throws (max 3).
 - 3 dices are rolled and any of them can be kept for the next roll.
 - Scoring is done as :
 
