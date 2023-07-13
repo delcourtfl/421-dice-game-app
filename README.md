@@ -6,7 +6,7 @@ This repository contains the source code and assets for a browser-based dice gam
 
 ## Demo
 
-You can try out the live demo of the game [here](https://delcourtfl.github.io/421DiceGameApp/).
+You can try out the live demo of the game [here](https://delcourtfl.github.io/421-dice-game-app/).
 
 ## Features
 
